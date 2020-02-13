@@ -1,3 +1,7 @@
+* { 
+  cursor: url(maplcursor.cur), auto !important; 
+}
+
 html, body {
   height: 100%;
 }
@@ -36,7 +40,7 @@ body {
   transition: background-color 0.4s ease-in-out;
 }
 body.choice-1 {
-  background-image: url(http://layer7.kr/2020/images/logo_nochar.png);
+  background-image: url(http://layer7.kr/2020/images/logo.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -46,33 +50,50 @@ body.choice-1 section.background-select .card h1 {
   color: #121212;
 }
 body.choice-2 {
-  background-color: #ff4949;
+  background-image: url(./images/unifox.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #b0e0e6;
 }
 body.choice-2 section.background-select .card h1 {
-  color: #ff4949;
-}
-body.choice-3 {
-  background-color: #399d89;
-}
-body.choice-3 section.background-select .card h1 {
-  color: #399d89;
-}
-body.choice-4 {
-  background-color: #ffa500;
-}
-body.choice-4 section.background-select .card h1 {
   color: #ffa500;
 }
+body.choice-3 {
+  background-image: url(./images/nefus.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #13254f;
+}
+body.choice-3 section.background-select .card h1 {
+  color: #8b00ff;
+}
+body.choice-4 {
+  background-image: url(./images/teamlog.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #aaaaaa;
+}
+body.choice-4 section.background-select .card h1 {
+  color: #ff4949;
+}
 body.choice-5 {
-  background-color: #837fff;
+  background-image: url(https://scontent-ssn1-1.xx.fbcdn.net/v/t1.0-9/26994217_701495803391151_304561625125649476_n.jpg?_nc_cat=111&_nc_ohc=DkO4ceMdhd0AX8sMxpc&_nc_ht=scontent-ssn1-1.xx&oh=d22af324fb7577a24410ef96c459703a&oe=5EFD6F46);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
 }
 body.choice-5 section.background-select .card h1 {
-  color: #837fff;
+  color: #0000ff;
 }
 
 section.background-select {
   width: 600px;
   background-color: #ffffff;
+  opacity: 0.8;
   position: relative;
   z-index: 21;
   border-radius: 10px;
@@ -83,7 +104,7 @@ section.background-select .card {
   padding: 40px 20px;
 }
 section.background-select .card h1 {
-  font-size: 40px;
+  font-size: 60px;
   font-family: "Roboto Condensed", sans-serif;
   letter-spacing: 3px;
   text-align: center;
@@ -126,25 +147,25 @@ section.background-select .card .color-choices div:nth-of-type(1) label:after {
   background-color: #888888;
 }
 section.background-select .card .color-choices div:nth-of-type(2) label:before {
-  background-color: #ff4949;
-}
-section.background-select .card .color-choices div:nth-of-type(2) label:after {
-  background-color: #ff9696;
-}
-section.background-select .card .color-choices div:nth-of-type(3) label:before {
-  background-color: #399d89;
-}
-section.background-select .card .color-choices div:nth-of-type(3) label:after {
-  background-color: #5ec5b0;
-}
-section.background-select .card .color-choices div:nth-of-type(4) label:before {
   background-color: #ffa500;
 }
-section.background-select .card .color-choices div:nth-of-type(4) label:after {
+section.background-select .card .color-choices div:nth-of-type(2) label:after {
   background-color: #eec16e;
 }
+section.background-select .card .color-choices div:nth-of-type(3) label:before {
+  background-color: #8b00ff;
+}
+section.background-select .card .color-choices div:nth-of-type(3) label:after {
+  background-color: #dac2ee;
+}
+section.background-select .card .color-choices div:nth-of-type(4) label:before {
+  background-color: #ff4949;
+}
+section.background-select .card .color-choices div:nth-of-type(4) label:after {
+  background-color: #ff9696;
+}
 section.background-select .card .color-choices div:nth-of-type(5) label:before {
-  background-color: #837fff;
+  background-color: #0000ff;
 }
 section.background-select .card .color-choices div:nth-of-type(5) label:after {
   background-color: #cdccff;

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-KR" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>UNIFOX 11기 지원서</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/unifox.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="wrapper">
+  <form>
+    <img src="./css/images/unifox2.png" alt="Smiley face" height="300" width="300">
+    <h1>UNIFOX</h1>
+
+    <h5>2020년 선린인터넷고등학교 정보보호과 전공동아리 UNIFOX 11기 지원등록 페이지입니다.</h5>
+    <hr class="sep"/>
+    <div class="group">
+      <input type="text" required="required" id="name"/><span class="highlight"></span><span class="bar"></span>
+      <label>이름</label>
+    </div>
+    <div class="group">
+      <input type="number" required="required" id="number"/><span class="highlight"></span><span class="bar"></span>
+      <label>학번</label>
+    </div>
+    <div class="group">
+      <input type="text" required="required" id="phone"/><span class="highlight"></span><span class="bar"></span>
+      <label>전화번호</label>
+    </div>
+    <div class="group">
+      <input type="text" required="required" id="email"/><span class="highlight"></span><span class="bar"></span>
+      <label>이메일</label>
+    </div>
+    <div class="group">
+      <textarea name="textarea01" id="textarea01" rows="13" required="required"></textarea><span class="highlight"></span><span class="bar"></span>
+      <label>UniFox에 지원한 동기에 대해서 서술해주시기 바랍니다. <br>(최대 2000자 입력가능)</label>
+      <span id="counter01" style="float: right;">###</span>
+    </div>
+    <div class="group">
+      <textarea name="textarea02" id="textarea02" rows="13" required="required"></textarea><span class="highlight"></span><span class="bar"></span>
+      <label>UniFox에 지원전에 한 남다른 노력에 대해서 서술해주시기 바랍니다. <br>(최대 2000자 입력가능)</label>
+      <span id="counter02" style="float: right;">###</span>
+    </div>
+    <div class="group">
+      <textarea name="textarea03" id="textarea03" rows="13" required="required"></textarea><span class="highlight"></span><span class="bar"></span>
+      <label>UniFox에서 배우고 싶은 것과 그에 맞는 이유를 서술해주시기 바랍니다.<br>(최대 2000자 입력가능)</label>
+      <span id="counter03" style="float: right;">###</span>
+    </div>
+    <div class="group">
+      <textarea name="textarea04" id="textarea04" rows="13" required="required"></textarea><span class="highlight"></span><span class="bar"></span>
+      <label>UniFox에서 자신이 어떤 존재가 될 것인지 서술해주시기 바랍니다.<br>(최대 2000자 입력가능)</label>
+      <span id="counter04" style="float: right;">###</span>
+    </div>
+    <div class="btn-box">
+      <button class="btn btn-submit" type="submit">제출하기
+      </button>
+    </div>
+  </form>
+</div>
+<!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js'></script>
+    <script  src="./javascript/unifox.js"></script>
+</body>
+</html>

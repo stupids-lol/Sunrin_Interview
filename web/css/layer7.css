@@ -1,15 +1,30 @@
+* { 
+  cursor: url(maplcursor.cur), auto !important; 
+}
+img {
+  width:35%;
+  height:35%;
+  display: block; margin: 0px auto; 
+}
 form {
   padding: 20px;
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 900px;
 }
 form h1 {
-  padding-bottom: 30px;
-  margin-bottom: 30px;
   font-family: 'Open Sans';
   font-weight: 100;
   text-align: center;
-  color: #0288D1;
+  color: #000000;
+}
+form h3 {
+  font-size: 14px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  font-family: 'Open Sans';
+  font-weight: 100;
+  text-align: center;
+  color: #000000;
   border-bottom: 1px solid #ccc;
 }
 form .row {
@@ -32,7 +47,10 @@ form textarea {
   height: auto;
   min-height: 350px;
   padding: 50px 10px 10px 10px;
-  resize: none;
+  resize: vertical;
+}
+form textarea:focus {
+  outline:none;
 }
 form input[type="text"] + label, form input[type="password"] + label, form textarea + label {
   position: absolute;
@@ -55,6 +73,9 @@ form input[type="text"] + label, form input[type="password"] + label, form texta
   transition: all 0.3s cubic-bezier(1, 0.1, 0, 0.9);
   -webkit-transform: translateZ(0) translateX(0);
           transform: translateZ(0) translateX(0);
+}
+form input:focus {
+  outline:none;
 }
 form textarea + label {
   width: 100%;
@@ -237,10 +258,8 @@ form button:hover:before, form button:focus:before {
   line-height:1.6em;
   max-height: 9em;
 }
-.wrap span {
-  position: absolute;
-  bottom: 5px;
-  right: 5px;
+.span {
+  margin-top:10px;
 }
 #counter {
 background:rgba(255,0,0,0.5);
