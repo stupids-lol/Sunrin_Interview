@@ -59,3 +59,9 @@ typings/
 
 # next.js build output
 .next
+
+# python virtualenv file
+.venv
+
+# vscode config file
+.vscode
