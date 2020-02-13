@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>Login</title>
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="../../css/login.css">
 </head>
 <body>
-    <form>
+    <form action="/login" method="post">
         <svg id="ryan" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
             <path d="M0,150 C0,65 120,65 120,150" fill="#e0a243" stroke="#000" stroke-width="2.5" />
             <g class="ears">
@@ -30,10 +30,10 @@
             </g>
             <path d="M40,105 C10,140 110,140 80,105 L80,105 L70,111 L60,105 L50,111 L40,105" fill="#fff" />
         </svg>
-        <input type="text" placeholder="email@sunrint.hs.kr">
-        <input type="password" placeholder="Password">
+        <input type="text" name="id" id="id" placeholder="email@sunrint.hs.kr">
+        <input type="password" name="password" id="password" placeholder="Password">
         <button class="btn btn-submit" type="submit">로그인
     </form>
-    <script src="./javascript//login.js"></script>
+    <script src="../../javascript//login.js"></script>
 </body>
 </html>
