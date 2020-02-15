@@ -12,7 +12,8 @@ const nefus = require('./routers/nefus');
 const teamlog = require('./routers/teamlog');
 const emotion = require('./routers/emotion');
 const login = require('./routers/login');
-const viewlayer7 = require('./routers/viewlayer7');
+const view = require('./routers/view');
+const detail = require('./routers/detail');
 
 const session = expressSession({
   secret: 'my key',
@@ -38,7 +39,8 @@ app.use('/nefus', nefus);
 app.use('/teamlog', teamlog);
 app.use('/emotion', emotion);
 app.use('/login', login);
-app.use('/viewlayer7', viewlayer7);
+app.use('/view', view);
+app.use('/detail', detail);
 
 app.all('*',
   function (req, res) {
