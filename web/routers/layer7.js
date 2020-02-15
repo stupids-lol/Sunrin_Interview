@@ -31,14 +31,15 @@ router.post('/', function (req, res) {
         number: number,
         phone_number: phone_number,
         email: email,
-        content: {
+        content: [
             content01,
             content02,
             content03,
             content04,
             content05
-        }
+        ]
     };
+    console.log(formData)
     request.post({
         url: 'http://funnyga.me:14104/application/apply/',
         form: formData
