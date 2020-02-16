@@ -4,6 +4,11 @@
   font-family: 'Open Sans';
 }
 
+p {
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+
 body {
   font-family: 'Open Sans';
   background-image: url(https://subtlepatterns.com/patterns/white_tiles.png);

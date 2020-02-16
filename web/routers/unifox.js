@@ -6,4 +6,44 @@ router.get('/', function (req, res) {
     res.sendFile(__dirname + '/views/unifox.html');
 });
 
+router.post('/', function (req, res) {
+    console.log('[POST] /unifox')
+    let club = 'uf';
+    let name = req.body.name;
+    if(name.length > 5){
+        name = name.slice(0, 5);
+    }
+    let number = req.body.number;
+    if(number.length > 5){
+        number = number.slice(0, 5);
+    }
+    let phone_number = req.body.phone;
+    if(phone_number > 11){
+        phone_number.slice(0, 11);
+    }
+    let email = req.body.email;
+    let content01 = '질문 1 UniFox에 지원한 동기에 대해서 서술해주시기 바랍니다. : ' + req.body.textarea01;
+    let content02 = '질문 2 UniFox에 지원전에 한 남다른 노력에 대해서 서술해주시기 바랍니다. : ' + req.body.textarea02;
+    let content03 = '질문 3 UniFox에서 배우고 싶은 것과 그에 맞는 이유를 서술해주시기 바랍니다. : ' + req.body.textarea03;
+    let content04 = '질문 4 UniFox에서 자신이 어떤 존재가 될 것인지 서술해주시기 바랍니다. : ' + req.body.textarea04;
+    var formData = {
+        club: club,
+        name: name,
+        number: number,
+        phone_number: phone_number,
+        email: email,
+        content: JSON.stringify([content01, content02, content03, content04])
+    };
+    request.post({
+        url: 'http://funnyga.me:14104/application/apply/',
+        form: formData
+    }, function (err, httpResponse, body) {
+        if (!err) {
+            res.send('<script type="text/javascript">alert("제출 완료 되었습니다.");window.location.href = "/"</script>');
+        } else {
+            console.log(err);
+        }
+    })
+})
+
 module.exports = router;

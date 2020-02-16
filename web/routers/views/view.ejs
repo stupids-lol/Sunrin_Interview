@@ -29,7 +29,7 @@
 
                 <ul id="dash-item__nav--1" class="dash-item__nav">
                     <li class="dash-item__nav__item"><a href=/detail/<%= data[i].id %>>Preview</a></li>
-                    <li class="dash-item__nav__item"><a href="#">Delete</a></li>
+                    <li class="dash-item__nav__item"><a href=/detail/delete/<%= data[i].id %>>Delete</a></li>
                 </ul>
             </div>
             <div class="dash-item__content">
@@ -40,7 +40,7 @@
             </div>
             <div class="dash-item__content">
                 <ul class="quiz-results">
-                    <span class="quiz-results__number quiz-results__number--views">전화번호 : <%= data[i].phone %></span>
+                    <span class="quiz-results__number quiz-results__number--views">전화번호 : <%= data[i].phone_number %></span>
                 </ul>
             </div>
             <div class="dash-item__content">

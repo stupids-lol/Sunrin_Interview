@@ -17,7 +17,7 @@ router.get('/', function (req, res) {
             if (!err) {
                 var detailbody = JSON.parse(body);
                 res.render('view', {
-                    count: "0",
+                    count: detailbody.count,
                     data: detailbody.data
                 });
             } else {

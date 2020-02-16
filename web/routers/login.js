@@ -4,7 +4,11 @@ const request = require('request');
 
 router.get('/', function (req, res) {
     console.log('[GET] /login');
-    res.sendFile(__dirname + '/views/login.html');
+    if (req.session.user === undefined) {
+        res.sendFile(__dirname + '/views/login.html');
+    }else{
+        res.redirect('/view');
+    }
 });
 
 router.post('/', function (req, res) {
