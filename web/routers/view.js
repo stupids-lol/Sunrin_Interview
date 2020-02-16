@@ -14,7 +14,7 @@ router.get('/', function (req, res) {
             url: 'http://funnyga.me:14104/application/',
             headers: headerData
         }, function (err, httpResponse, body) {
-            if (!err || httpResponse.statusCode == 201 || httpResponse.statusCode == 200) {
+            if (!err) {
                 var detailbody = JSON.parse(body);
                 res.render('view', {
                     count: detailbody.length,
@@ -22,7 +22,6 @@ router.get('/', function (req, res) {
                 });
             } else {
                 console.log(err);
-                res.redirect('/');
             }
         })
     }
