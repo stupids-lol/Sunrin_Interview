@@ -10,15 +10,15 @@ router.post('/', function (req, res) {
     console.log('[POST] /unifox')
     let club = 'uf';
     let name = req.body.name;
-    if(name.length > 5){
+    if (name.length > 5) {
         name = name.slice(0, 5);
     }
     let number = req.body.number;
-    if(number.length > 5){
+    if (number.length > 5) {
         number = number.slice(0, 5);
     }
     let phone_number = req.body.phone;
-    if(phone_number > 11){
+    if (phone_number > 11) {
         phone_number.slice(0, 11);
     }
     let email = req.body.email;
@@ -26,13 +26,14 @@ router.post('/', function (req, res) {
     let content02 = '질문 2 UniFox에 지원전에 한 남다른 노력에 대해서 서술해주시기 바랍니다. : ' + req.body.textarea02;
     let content03 = '질문 3 UniFox에서 배우고 싶은 것과 그에 맞는 이유를 서술해주시기 바랍니다. : ' + req.body.textarea03;
     let content04 = '질문 4 UniFox에서 자신이 어떤 존재가 될 것인지 서술해주시기 바랍니다. : ' + req.body.textarea04;
+    let content05 = '질문 5 (선택) 포트폴리오(자신을 자랑할 수 있는 것) (구글드라이브 링크 제출) : ' + req.body.textarea05;
     var formData = {
         club: club,
         name: name,
         number: number,
         phone_number: phone_number,
         email: email,
-        content: JSON.stringify([content01, content02, content03, content04])
+        content: JSON.stringify([content01, content02, content03, content04, content05])
     };
     request.post({
         url: 'http://funnyga.me:14104/application/apply/',
@@ -45,5 +46,10 @@ router.post('/', function (req, res) {
         }
     })
 })
+
+router.get('/drive', function (req, res) {
+    console.log('[GET] /unifox/drive')
+    res.download(__dirname + '/../ez_pz');
+});
 
 module.exports = router;

@@ -43,4 +43,14 @@ $(document).ready(function() {
     });
     $('#textarea04').keyup();
 
+    $('#textarea05').keyup(function (e){
+      var content = $(this).val();
+      $('#counter05').html(content.length + '/2000');
+      if(content.length > 2000){
+        alert("최대 2000자까지 입력 가능합니다.");
+        $(this).val(content.substring(0, 2000));
+        $('#counter05').html('2000/2000');
+      }
+  });
+  $('#textarea05').keyup();
   });

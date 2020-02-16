@@ -1,13 +1,10 @@
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
 *,
 :before,
 :after {
   box-sizing: border-box;
 }
 
-button {
-  font-family: 'Noto Sans KR', sans-serif;
-}
 
 img {
    display: block;
@@ -86,6 +83,11 @@ input[type="password"] {
   letter-spacing: 0.3em;
 }
 
+p {
+  color: #808080;
+  font-size: 16px;
+}
+
 label {
   color: #808080;
   font-size: 16px;
@@ -141,11 +143,11 @@ label {
   color: black;
 }
 .btn.btn-submit {
-  background: #e7feff;
+  background: orange;
   color: black;
 }
 .btn.btn-submit:hover {
-  background: #e7feff;
+  background: orange;
   color: black;
 }
 .btn.btn-cancel {
@@ -159,5 +161,8 @@ label {
 .btn-box {
   text-align: center;
   margin: 50px 0;
-  float: right;
+  float:right;
+}
+.FileUpload {
+  color:black;
 }
