@@ -29,7 +29,7 @@ router.post('/', function (req, res) {
         url: 'http://funnyga.me:14104/custom_user/auth/',
         form: formData
     }, function (err, httpResponse, body) {
-        if (!err) {
+        if (!err || httpResponse.statusCode == 201 || httpResponse.statusCode == 200) {
             var detailbody = JSON.parse(body);
             if (detailbody.token) {
                 req.session.user = {
@@ -43,6 +43,7 @@ router.post('/', function (req, res) {
             }
         } else {
             console.log(err);
+            res.redirect('/');
         }
     })
 });

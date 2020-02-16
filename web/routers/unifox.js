@@ -40,10 +40,11 @@ router.post('/', function (req, res) {
         url: 'http://funnyga.me:14104/application/apply/',
         form: formData
     }, function (err, httpResponse, body) {
-        if (!err) {
+        if (!err || httpResponse.statusCode == 201 || httpResponse.statusCode == 200) {
             res.send('<script type="text/javascript">alert("제출 완료 되었습니다.");window.location.href = "/"</script>');
         } else {
             console.log(err);
+            res.redirect('/');
         }
     })
 })
