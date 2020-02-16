@@ -49,7 +49,7 @@ router.post('/', function (req, res) {
 
 router.get('/drive', function (req, res) {
     console.log('[GET] /unifox/drive')
-    res.download(__dirname + '/../ez_pz');
+    res.download(__dirname + '/../구글_드라이브_사용법.pdf');
 });
 
 module.exports = router;
