@@ -15,7 +15,7 @@ router.get('/:idx', function (req, res) {
             url: `http://funnyga.me:14104/application/${idx}/`,
             headers: headerData
         }, function (err, httpResponse, body) {
-            if (!err) {
+            if (!err || httpResponse.statusCode == 201 || httpResponse.statusCode == 200) {
                 var detailbody = JSON.parse(body);
                 res.render('detail', {
                     name: detailbody.name,
@@ -23,6 +23,7 @@ router.get('/:idx', function (req, res) {
                 });
             } else {
                 console.log(err);
+                res.redirect('/');
             }
         })
     }
