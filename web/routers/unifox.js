@@ -18,7 +18,7 @@ router.post('/', function (req, res) {
         number = number.slice(0, 5);
     }
     let phone_number = req.body.phone;
-    if (phone_number > 11) {
+    if (phone_number.length > 11) {
         phone_number.slice(0, 11);
     }
     let email = req.body.email;
