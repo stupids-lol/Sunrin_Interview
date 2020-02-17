@@ -28,7 +28,7 @@ router.post('/', function (req, res) {
     let content03 = '질문 3 (*필수) 자신의 특기를 서술해주시기 바랍니다 : ' + req.body.textarea03;
     let content04 = '질문 4 (*필수) 자신의 취미를 서술해주시기 바랍니다 : ' + req.body.textarea04;
     let content05 = '질문 5 (*선택) 해킹 대회 출전 경험을 서술해주시기 바랍니다 : ' + req.body.textarea05;
-    let content05 = '질문 6 (*선택) 포트폴리오가 있으시다면 아래 구글드라이브 링크로 제출해주시기 바랍니다 : ' + req.body.textarea06;
+    let content06 = '질문 6 (*선택) 포트폴리오가 있으시다면 아래 구글드라이브 링크로 제출해주시기 바랍니다 : ' + req.body.textarea06;
     var formData = {
         club: club,
         name: name,
