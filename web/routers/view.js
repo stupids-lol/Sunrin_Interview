@@ -3,7 +3,8 @@ const router = express.Router();
 const request = require('request');
 
 router.get('/', function (req, res) {
-    console.log('[GET] /viewlayer7');
+    console.log('[GET] /view');
+    console.log('[ID] ' + req.session.id);
     if (req.session.user === undefined) {
         res.sendFile(__dirname + '/views/login.html');
     } else {

@@ -67,7 +67,7 @@ body.choice-3 {
   background-color: #13254f;
 }
 body.choice-3 section.background-select .card h1 {
-  color: #8b00ff;
+  color: #13254f;
 }
 body.choice-4 {
   background-image: url(./images/teamlog.png);
@@ -153,10 +153,10 @@ section.background-select .card .color-choices div:nth-of-type(2) label:after {
   background-color: #eec16e;
 }
 section.background-select .card .color-choices div:nth-of-type(3) label:before {
-  background-color: #8b00ff;
+  background-color: #13254f;
 }
 section.background-select .card .color-choices div:nth-of-type(3) label:after {
-  background-color: #dac2ee;
+  background-color: #799cee;
 }
 section.background-select .card .color-choices div:nth-of-type(4) label:before {
   background-color: #ff4949;
