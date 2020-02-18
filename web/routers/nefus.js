@@ -11,17 +11,8 @@ router.post('/', function (req, res) {
     console.log('[POST] /nefus')
     let club = 'nf';
     let name = req.body.name;
-    if(name.length > 5){
-        name = name.slice(0, 5);
-    }
     let number = req.body.number;
-    if(number.length > 5){
-        number = number.slice(0, 5);
-    }
     let phone_number = req.body.phone;
-    if(phone_number > 11){
-        phone_number.slice(0, 11);
-    }
     let email = req.body.email;
     let content01 = '질문 1 NEFUS에 지원을 하게 된 동기에 대해서 서술 하시오 : ' + req.body.textarea01;
     let content02 = '질문 2 자기소개서를 자유롭게 작성하시오 : ' + req.body.textarea02;
@@ -31,9 +22,9 @@ router.post('/', function (req, res) {
     let content06 = '질문 6 아래에 포토폴리오를 공유한 구글 드라이브 링크를 기재해주세요 : ' + req.body.textarea06;
     var formData = {
         club: club,
-        name: name,
-        number: number,
-        phone_number: phone_number,
+        name: name.slice(0, 5),
+        number: number.slice(0, 5),
+        phone_number: phone_number.slice(0, 11),
         email: email,
         content: JSON.stringify([content01, content02, content03, content04, content05, content06])
     };

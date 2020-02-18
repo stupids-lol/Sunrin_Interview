@@ -1,0 +1,98 @@
+@font-face { font-family: 'GmarketSansMedium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+body {
+    background-color: #acf3ff;
+    font-family: 'GmarketSansMedium';
+}
+
+.emotion-form {
+    background-color: #98dfff;
+    margin: 50px auto;
+    padding: 0px 0px 2px 0px;
+    width: 600px;
+    box-shadow: 0px 11px 31px rgba(0, 0, 0, 0.3);
+}
+
+.emotion-logo {
+    background-color: white;
+    padding: 10px 0 45px;
+    text-align: center;
+}
+
+.box {
+    background-color: #98dfff;
+    margin: -40px 40px 40px;
+    padding: 20px 40px 40px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'GmarketSansMedium';
+}
+
+.precautions {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'GmarketSansMedium';
+}
+
+.form {
+    margin-top: 30px;
+}
+
+.form li {
+    margin-bottom: 25px;
+}
+
+.form .text-input {
+    background-color: #98dfff;
+    padding: 7px 2px 2px;
+    display: block;
+    width: 100%;
+    outline: none;
+    border: 0px;
+    border-bottom: 1px solid grey;
+    font-size: 15px;
+    font-family: 'GmarketSansMedium';
+}
+
+.form textarea {
+    background-color: #98dfff;
+    padding: 7px 2px 2px;
+    display: block;
+    width: 100%;
+    outline: none;
+    border: 0px solid white;
+    border-bottom: 1px solid grey;
+    font-size: 15px;
+    font-family: 'GmarketSansMedium';
+}
+
+.form li input[type="checkbox"]{
+    display: inline-block;
+    margin: 1px 10px 0 0;
+    width: 19px;
+    height: 19px;
+    vertical-align: middle;
+}
+
+.button {
+    background-color: #00A5FF;
+    display: block;
+    margin: 10px auto;
+    width: 100px;
+    height: 50px;
+    border-radius: 80px;
+    line-height: 52px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'GmarketSansMedium';
+}
+
+.button:active {
+    background-color: #0078FF;
+}
