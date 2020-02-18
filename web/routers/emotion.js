@@ -20,7 +20,7 @@ router.post('/', function (req, res) {
             day = day + ', 3월 2일';
         }
     }else if(req.body.second == 'second'){
-        day = day + '3월 2일';
+        day = '면접 가능 날짜 : 3월 2일';
     }
     let email = req.body.email;
     let content01 = '질문 1 지원동기 : ' + req.body.textarea01;
