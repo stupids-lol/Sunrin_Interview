@@ -6,7 +6,7 @@ router.get('/', function (req, res) {
     console.log('[GET] /login');
     if (req.session.user === undefined) {
         res.sendFile(__dirname + '/views/login.html');
-    }else{
+    } else {
         res.redirect('/view');
     }
 });

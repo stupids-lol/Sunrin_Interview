@@ -18,7 +18,7 @@
             </svg>
         </defs>
     </svg>
-    
+
     <h1><strong>총 지원자 : <%= count %>명</strong></h1>
 
     <% for(var i = 0; i < data.length; i++){ %>
@@ -28,24 +28,24 @@
                 <h3 class="dash-item__title"><a href="#"><%= data[i].name %></a></h3>
 
                 <ul id="dash-item__nav--1" class="dash-item__nav">
-                    <li class="dash-item__nav__item"><a href=/detail/<%= data[i].id %>>Preview</a></li>
-                    <li class="dash-item__nav__item"><a href=/detail/delete/<%= data[i].id %>>Delete</a></li>
-                </ul>
-            </div>
-            <div class="dash-item__content">
+                    <li class="dash-item__nav__item"><a href=/detail/<%= data[i].id %>>Preview </a> </li> <li
+                            class="dash-item__nav__item"><a href=/detail/delete/<%= data[i].id %>>Delete </a> </li>
+                                </ul> </div> <div class="dash-item__content">
 
+                                <ul class="quiz-results">
+                                    <span class="quiz-results__number quiz-results__number--views">학번 :
+                                        <%= data[i].number %></span>
+                                </ul>
+            </div>
+            <div class="dash-item__content">
                 <ul class="quiz-results">
-                    <span class="quiz-results__number quiz-results__number--views">학번 : <%= data[i].number %></span>
+                    <span class="quiz-results__number quiz-results__number--views">전화번호 :
+                        <%= data[i].phone_number %></span>
                 </ul>
             </div>
             <div class="dash-item__content">
                 <ul class="quiz-results">
-                    <span class="quiz-results__number quiz-results__number--views">전화번호 : <%= data[i].phone_number %></span>
-                </ul>
-            </div>
-            <div class="dash-item__content">
-                <ul class="quiz-results">
-                        <span class="quiz-results__number quiz-results__number--views">이메일 : <%= data[i].email %></span>
+                    <span class="quiz-results__number quiz-results__number--views">이메일 : <%= data[i].email %></span>
                 </ul>
             </div>
         </li>

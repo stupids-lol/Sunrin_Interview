@@ -30,7 +30,7 @@ input {
 }
 
 button {
-    background-color:#fff;
+    background-color: #fff;
     font-size: 16px;
     border: 0;
     border-radius: 5px;
@@ -71,7 +71,9 @@ button {
     transform-origin: 50% 50% -44px;
 }
 
-.ears, .eyes, .muzzle {
+.ears,
+.eyes,
+.muzzle {
     transition: transform .5s;
 }
 
@@ -95,7 +97,7 @@ button {
 .look-away.down .ears,
 .look-away.down .eyes,
 .look-away.down .muzzle {
-    transform: rotate3d(-.2, 0, 0, 20deg) !important;    
+    transform: rotate3d(-.2, 0, 0, 20deg) !important;
 }
 
 .look-away.playing.up .ears,

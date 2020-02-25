@@ -14,12 +14,12 @@ router.post('/', function (req, res) {
     let number = req.body.number;
     let phone_number = req.body.phone;
     let day = '';
-    if(req.body.first == 'first'){
+    if (req.body.first == 'first') {
         day = '면접 가능 날짜 : 3월 1일';
-        if(req.body.second == 'second'){
+        if (req.body.second == 'second') {
             day = day + ', 3월 2일';
         }
-    }else if(req.body.second == 'second'){
+    } else if (req.body.second == 'second') {
         day = '면접 가능 날짜 : 3월 2일';
     }
     let email = req.body.email;

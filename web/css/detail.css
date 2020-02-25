@@ -1,4 +1,5 @@
 @import url(http://weloveiconfonts.com/api/?family=zocial);
+
 /* zocial */
 [class*="zocial-"]:before {
   font-family: 'Open Sans';
@@ -17,6 +18,7 @@ body {
   max-width: 1000px;
   margin: 0 auto;
 }
+
 @media (max-width: 600px) {
   body {
     padding: 30px 0;
@@ -46,19 +48,24 @@ body {
   -webkit-transition: box-shadow 0.5s ease-out;
   transition: box-shadow 0.5s ease-out;
 }
+
 .logo:hover {
   box-shadow: -4px -4px 0 #F0C15D, -8px -8px 0 #87A644, -12px -12px 0 #5A9A70, 4px 4px 0 #E86946, 8px 8px 0 #EF9D54, 12px 12px 0 #F0C15D;
 }
+
 .logo:hover .logo-drop {
   color: #000;
   height: 100%;
 }
+
 .logo:hover .logo-text {
   color: #aaa;
 }
+
 .logo:active {
   box-shadow: none;
 }
+
 .logo .logo-drop {
   -moz-transition: 0.2s;
   -o-transition: 0.2s;
@@ -71,6 +78,7 @@ body {
   left: 0;
   top: 0;
 }
+
 .logo .logo-text {
   position: relative;
   z-index: 1;
@@ -82,6 +90,7 @@ body {
   border-top: 2px solid #555;
   border-bottom: 4px solid #888;
 }
+
 .section .content {
   -moz-transition: font-size 0.2s;
   -o-transition: font-size 0.2s;
@@ -93,11 +102,13 @@ body {
   width: 100%;
   min-height: 200px;
 }
+
 @media (max-width: 600px) {
   .section .content {
     padding: 30px 10px;
   }
 }
+
 .section .content h1 {
   font-family: 'Open Sans';
   font-size: 2.3em;
@@ -105,6 +116,7 @@ body {
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
+
 .section .content p {
   font-size: 1.3em;
   line-height: 1.5em;
@@ -128,16 +140,20 @@ body {
   margin-top: 10px;
   box-shadow: 0 0 2px 3px #333333 inset;
 }
+
 .change-fontSize .letter {
   cursor: default;
   padding: 0 7px;
 }
+
 .change-fontSize .letter[data-size="smaller"] {
   font-size: 28px !important;
 }
+
 .change-fontSize .letter[data-size="larger"] {
   font-size: 34px !important;
 }
+
 .change-fontSize .letter:hover {
   color: #aaa;
 }
@@ -149,24 +165,28 @@ body {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   25% {
     -moz-transform: rotate(-35deg);
     -ms-transform: rotate(-35deg);
     -webkit-transform: rotate(-35deg);
     transform: rotate(-35deg);
   }
+
   50% {
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   75% {
     -moz-transform: rotate(35deg);
     -ms-transform: rotate(35deg);
     -webkit-transform: rotate(35deg);
     transform: rotate(35deg);
   }
+
   100% {
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
@@ -174,6 +194,7 @@ body {
     transform: rotate(0deg);
   }
 }
+
 @keyframes sway {
   0% {
     -moz-transform: rotate(0deg);
@@ -181,24 +202,28 @@ body {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   25% {
     -moz-transform: rotate(-35deg);
     -ms-transform: rotate(-35deg);
     -webkit-transform: rotate(-35deg);
     transform: rotate(-35deg);
   }
+
   50% {
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   75% {
     -moz-transform: rotate(35deg);
     -ms-transform: rotate(35deg);
     -webkit-transform: rotate(35deg);
     transform: rotate(35deg);
   }
+
   100% {
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
@@ -206,6 +231,7 @@ body {
     transform: rotate(0deg);
   }
 }
+
 footer {
   height: 50px;
   width: 100%;
@@ -213,6 +239,7 @@ footer {
   clear: both;
   box-shadow: 0 3px 3px 0px rgba(17, 17, 17, 0.3);
 }
+
 footer aside.contact {
   position: relative;
   cursor: pointer;
@@ -224,16 +251,20 @@ footer aside.contact {
   background: #eee;
   height: 36px;
 }
+
 footer aside.contact:hover {
   box-shadow: 0px 0px 2px 3px rgba(68, 68, 68, 0.5);
 }
+
 footer aside.contact.show {
   width: auto;
   box-shadow: 2px 2px 3px rgba(68, 68, 68, 0.5);
 }
+
 footer aside.contact.show a {
   display: inline-block;
 }
+
 footer aside.contact .gravatar {
   width: 30px;
   height: 30px;
@@ -242,6 +273,7 @@ footer aside.contact .gravatar {
   background-image: url("http://en.gravatar.com/avatar/658a109f6ea8d31b32182e1aa7182193?s=30&d=mm");
   vertical-align: top;
 }
+
 footer aside.contact a {
   display: none;
   padding: 5px;
@@ -255,12 +287,15 @@ footer aside.contact a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+
 footer aside.contact a:hover {
   -webkit-animation: sway 1.2s linear infinite;
 }
+
 footer aside.contact .zocial-twitter {
   color: #33CCFF;
 }
+
 footer aside.contact .zocial-linkedin {
   color: #4875B4;
 }

@@ -18,8 +18,8 @@ body {
   padding: 15px;
   border-radius: 50px;
   background: linear-gradient(145deg, #999eff, #8185e2);
-  box-shadow:  18px 18px 45px #7175c6, 
-               -18px -18px 45px #adb3ff;
+  box-shadow: 18px 18px 45px #7175c6,
+    -18px -18px 45px #adb3ff;
 }
 
 .main {
@@ -89,17 +89,18 @@ textarea:focus {
   outline: none;
 }
 
-input:focus ~ label, input:valid ~ label,
-textarea:focus ~ label,
-textarea:valid ~ label {
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label {
   top: -20px;
   font-size: 10px;
   font-family: 'Gugi', cursive;
   color: rgb(255, 255, 255);
 }
 
-input:focus ~ .bar:before,
-textarea:focus ~ .bar:before {
+input:focus~.bar:before,
+textarea:focus~.bar:before {
   width: 555px;
 }
 
@@ -152,30 +153,37 @@ label {
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
+
 .btn:hover {
   color: #8b8b8b;
   box-shadow: 0 7px 14px rgba(0, 0, 0, 0.18), 0 5px 5px rgba(0, 0, 0, 0.12);
 }
+
 .btn.btn-link {
   background: #646ade;
   color: #d3eafd;
 }
+
 .btn.btn-link:hover {
   background: #646ade;
   color: #deeffd;
 }
+
 .btn.btn-submit {
   background: #8e58c4;
   font-family: 'Gugi', cursive;
   color: #bce0fb;
 }
+
 .btn.btn-submit:hover {
   background: #646ade;
   color: #deeffd;
 }
+
 .btn.btn-cancel {
   background: #eee;
 }
+
 .btn.btn-cancel:hover {
   background: #e1e1e1;
   color: #8b8b8b;
@@ -185,6 +193,3 @@ label {
   text-align: center;
   margin: 50px 0;
 }
-×
-Drag and Drop
-The image will be downloaded

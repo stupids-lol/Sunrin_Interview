@@ -1,7 +1,7 @@
-(function() {
+(function () {
   var $content, FontSize, changeFontSize, incr_px, ls_font_size;
 
-  $(".contact").on("click", function(e) {
+  $(".contact").on("click", function (e) {
     return $(this).toggleClass("show");
   });
 
@@ -18,7 +18,7 @@
 
   $content.css("font-size", ls_font_size + "px");
 
-  changeFontSize = function(e) {
+  changeFontSize = function (e) {
     var newSize, size, sizeType;
     sizeType = $(e.target).data("size");
     size = parseInt($content.css("font-size"));
@@ -38,7 +38,7 @@
     }
   };
 
-  $(".change-fontSize").on("mousedown", function(e) {
+  $(".change-fontSize").on("mousedown", function (e) {
     return changeFontSize(e);
   });
 

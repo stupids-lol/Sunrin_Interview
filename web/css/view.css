@@ -3,7 +3,7 @@ body {
   max-width: 70rem;
   margin: 0 auto;
   padding: 2rem 20px 3rem;
-  font-family: "ff-tisa-sans-web-pro", Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma, sans-serif;
+  font-family: "ff-tisa-sans-web-pro", Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
   -webkit-transition: all 0.2s cubic-bezier(0, 0, 0.3, 1);
   transition: all 0.2s cubic-bezier(0, 0, 0.3, 1);
 }
@@ -15,10 +15,13 @@ a {
   transition: color .2s;
   touch-action: manipulation;
 }
+
 a:focus {
   outline: 1px dotted #4274b0;
 }
-a:hover, a:focus {
+
+a:hover,
+a:focus {
   color: #315581;
 }
 
@@ -27,9 +30,9 @@ a:hover, a:focus {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-          flex-flow: row wrap;
+  flex-flow: row wrap;
   -webkit-box-align: stretch;
-          align-items: stretch;
+  align-items: stretch;
   list-style: none;
   margin-left: 0;
 }
@@ -39,10 +42,10 @@ a:hover, a:focus {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-          flex-direction: column;
+  flex-direction: column;
   align-content: flex-end;
   -webkit-box-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   padding: 1.2rem 1.4rem 1rem;
   background: #fff;
   list-style: none;
@@ -54,6 +57,7 @@ a:hover, a:focus {
   -webkit-transition: all 0.2s cubic-bezier(0, 0, 0.3, 1);
   transition: all 0.2s cubic-bezier(0, 0, 0.3, 1);
 }
+
 @media (min-width: 500px) {
   .dash-item {
     flex-basis: 100%;
@@ -111,6 +115,7 @@ a:hover, a:focus {
   padding-bottom: 0;
   margin-right: 10px;
 }
+
 .dash-item__nav__item:last-of-type {
   margin-right: 0;
 }
@@ -124,10 +129,11 @@ a:hover, a:focus {
   top: 100%;
   margin-top: 0.2rem;
   -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   -webkit-transition: all 0.2s cubic-bezier(0, 0, 0.3, 1);
   transition: all 0.2s cubic-bezier(0, 0, 0.3, 1);
 }
+
 .dash-item__nav--collapsible .dash-item__nav__item {
   padding: 0.4rem 0;
 }
@@ -159,40 +165,45 @@ a:hover, a:focus {
 .dash-list--focus-one {
   background: #bcd4ce;
 }
+
 .dash-list--focus-one .dash-item {
   opacity: 0.675;
 }
+
 .dash-list--focus-one .dash-item--menu-active {
   -webkit-transform: translate3d(0, -3px, 0);
-          transform: translate3d(0, -3px, 0);
+  transform: translate3d(0, -3px, 0);
   box-shadow: inset 4px 0 0 #3bb275, 0 2px 2px rgba(0, 0, 0, 0.2);
   opacity: 1;
 }
 
 .dash-item--menu-active .dash-item__menu-action__icon--bottom {
   -webkit-transform: translateY(-15.5%);
-          transform: translateY(-15.5%);
+  transform: translateY(-15.5%);
 }
+
 .dash-item--menu-active .dash-item__menu-action__icon--top {
   -webkit-transform: rotateX(-180deg) translateY(0px);
-          transform: rotateX(-180deg) translateY(0px);
+  transform: rotateX(-180deg) translateY(0px);
 }
+
 .dash-item--menu-active .dash-item__nav--collapsible {
   display: block;
   -webkit-animation: slideInTop 0.25s cubic-bezier(0, 0, 0.3, 1) forwards;
-          animation: slideInTop 0.25s cubic-bezier(0, 0, 0.3, 1) forwards;
+  animation: slideInTop 0.25s cubic-bezier(0, 0, 0.3, 1) forwards;
 }
+
 .dash-item--menu-active .dash-item__content {
   opacity: 0.4;
   -webkit-transform: translate3d(0, 0.675rem, 0);
-          transform: translate3d(0, 0.675rem, 0);
+  transform: translate3d(0, 0.675rem, 0);
 }
 
 .quiz-results {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -217,6 +228,7 @@ a:hover, a:focus {
 .quiz-results__number--average-score {
   color: #319461;
 }
+
 .quiz-results__number--average-score:after {
   font-size: 25px;
   position: absolute;
@@ -235,12 +247,13 @@ a:hover, a:focus {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(0, -20px, 0);
-            transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
@@ -248,14 +261,16 @@ a:hover, a:focus {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(0, -20px, 0);
-            transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
+
 .twitter__username-link {
   position: relative;
   top: 2rem;

@@ -17,9 +17,9 @@ router.get('/:idx', function (req, res) {
         }, function (err, httpResponse, body) {
             if (!err) {
                 var detailbody = JSON.parse(body);
-                if(detailbody.detail){
+                if (detailbody.detail) {
                     res.redirect('/login');
-                }else{
+                } else {
                     res.render('detail', {
                         name: detailbody.name,
                         data: JSON.parse(detailbody.content)

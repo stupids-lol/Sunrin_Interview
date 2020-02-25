@@ -1,96 +1,99 @@
 <!DOCTYPE html>
-<html lang="ko" >
+<html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no">
   <title>Layer7 20기 지원서</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="../../css/layer7.css">
+  <link rel="stylesheet" href="../../css/layer7.css">
 
 </head>
+
 <body>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-<form action="/layer7" method="post">
-  <img src="http://layer7.kr/2019/@apply-38817ab/logo.png">
-  <h1><strong>Layer7 지원서 (2020)</strong></h1>
-  <h3>면접 지원 기간은 2020년 n월 n일 n:n까지 받고 있습니다. <br> 모든 문의는 danielch0401@naver.com로 해주시면 됩니다. <br><br><strong>* 타 동아리와 중복 지원시 불이익이 있을 수 있습니다.</strong></h3>
+  <form action="/layer7" method="post">
+    <img src="http://layer7.kr/2019/@apply-38817ab/logo.png">
+    <h1><strong>Layer7 지원서 (2020)</strong></h1>
+    <h3>면접 지원 기간은 2020년 n월 n일 n:n까지 받고 있습니다. <br> 모든 문의는 danielch0401@naver.com로 해주시면 됩니다. <br><br><strong>* 타 동아리와 중복
+        지원시 불이익이 있을 수 있습니다.</strong></h3>
 
-  <div class="row">
-    <input type="text" id="name" name="name" required="required" placeholder="이름을 입력해주세요" id="name"/>
-    <label for="name">이름</label>
-    <small class="form-text text-muted very-small">예시 : 최현우</small>
-  </div>
+    <div class="row">
+      <input type="text" id="name" name="name" required="required" placeholder="이름을 입력해주세요" id="name" />
+      <label for="name">이름</label>
+      <small class="form-text text-muted very-small">예시 : 최현우</small>
+    </div>
 
-  <div class="row">
-    <input type="number" id="number" name="number" required="required" placeholder="학번을 입력해주세요" id="number"/>
-    <label for="number">학번</label>
-    <small class="form-text text-muted very-small">예시 : 10326</small>
-  </div>
+    <div class="row">
+      <input type="number" id="number" name="number" required="required" placeholder="학번을 입력해주세요" id="number" />
+      <label for="number">학번</label>
+      <small class="form-text text-muted very-small">예시 : 10326</small>
+    </div>
 
-  <div class="row">
-    <input type="number" id="phone" name="phone" required="required" placeholder="전화번호를 입력해주세요"id="phone"/>
-    <label for="phone">전화번호</label>
-    <small class="form-text text-muted very-small">면접 안내, 합격 통보 용도로 사용됩니다. (형식 : 01077777777)</small>
-  </div>
+    <div class="row">
+      <input type="number" id="phone" name="phone" required="required" placeholder="전화번호를 입력해주세요" id="phone" />
+      <label for="phone">전화번호</label>
+      <small class="form-text text-muted very-small">면접 안내, 합격 통보 용도로 사용됩니다. (형식 : 01077777777)</small>
+    </div>
 
-  <div class="row">
-    <input type="email" id="email" name="email" required="required" placeholder="이메일을 입력해주세요." id="email"/>
-    <label for="email">이메일</label>
-    <small class="form-text text-muted very-small">전화번호와 동일하게 면접 안내, 합격 통보 용도로 사용됩니다.</small>
-  </div>
-  
-  <div class="row">
-    <textarea name="textarea01" id="textarea01" required="required" placeholder="지원 동기를 입력해주세요"></textarea>
-    <label for="textarea01">(*필수) Layer7에 지원한 동기를 서술해 주시기 바랍니다.</label>
-    <span id="counter01" style="float: right;">###</span>
-    <small class="form-text text-muted very-small">Layer7에 지원한 동기를 최대한 자세하게 적어주세요. (최대 2000자 입력 가능)</small>
-  </div>
+    <div class="row">
+      <input type="email" id="email" name="email" required="required" placeholder="이메일을 입력해주세요." id="email" />
+      <label for="email">이메일</label>
+      <small class="form-text text-muted very-small">전화번호와 동일하게 면접 안내, 합격 통보 용도로 사용됩니다.</small>
+    </div>
 
-  <div class="row">
-    <textarea name="textarea02" id="textarea02" required="required" placeholder="해킹 분야에 대한 자신의 경험을 입력해주세요"></textarea>
-    <label for="textarea02">(*필수) 주분야 또는 전공 대한 자신의 경험을 서술해주시기 바랍니다.</label>
-    <span id="counter02" style="float: right;">###</span>
-    <small class="form-text text-muted very-small">전공 관련해서 평소에 공부하는 내용이나 자신있는 분야에 대하여 최대한 자세히 적어주세요. (최대 2000자 입력 가능)</small>
-  </div>
-  
-  <div class="row">
-    <textarea name="textarea03" id="textarea03" required="required" placeholder="자신의 특기를 입력해주세요"></textarea>
-    <label for="textarea03">(*필수) 자신의 특기를 서술해주시기 바랍니다.</label>
-    <span id="counter03" style="float: right;">###</span>
-    <small class="form-text text-muted very-small">자신의 장점이나 특기 등을 자유롭게 적어주시면 됩니다. (최대 2000자 입력 가능)</small>
-  </div>
+    <div class="row">
+      <textarea name="textarea01" id="textarea01" required="required" placeholder="지원 동기를 입력해주세요"></textarea>
+      <label for="textarea01">(*필수) Layer7에 지원한 동기를 서술해 주시기 바랍니다.</label>
+      <span id="counter01" style="float: right;">###</span>
+      <small class="form-text text-muted very-small">Layer7에 지원한 동기를 최대한 자세하게 적어주세요. (최대 2000자 입력 가능)</small>
+    </div>
 
-  <div class="row">
-    <textarea name="textarea04" id="textarea04" required="required" placeholder="자신의 취미를 입력해주세요"></textarea>
-    <label for="textarea04">(*필수) 자신의 취미를 서술해주시기 바랍니다.</label>
-    <span id="counter04" style="float: right;">###</span>
-    <small class="form-text text-muted very-small">자신이 평소에 즐겨하는 취미를 자유롭게 적어주시면 됩니다. (최대 2000자 입력 가능)</small>
-  </div>
+    <div class="row">
+      <textarea name="textarea02" id="textarea02" required="required" placeholder="해킹 분야에 대한 자신의 경험을 입력해주세요"></textarea>
+      <label for="textarea02">(*필수) 주분야 또는 전공 대한 자신의 경험을 서술해주시기 바랍니다.</label>
+      <span id="counter02" style="float: right;">###</span>
+      <small class="form-text text-muted very-small">전공 관련해서 평소에 공부하는 내용이나 자신있는 분야에 대하여 최대한 자세히 적어주세요. (최대 2000자 입력
+        가능)</small>
+    </div>
 
-  <div class="row">
-    <textarea name="textarea05" id="textarea05" placeholder="해킹 대회 출전 경험을 입력해주세요"></textarea>
-    <label for="textarea05">(*선택) 해킹 대회 출전 경험을 서술해주시기 바랍니다.</label>
-    <span id="counter05" style="float: right;">###</span>
-    <small class="form-text text-muted very-small">해킹 관련 대회에 출전한 경험이나 수상한 경험을 적어주시면 됩니다. (최대 2000자 입력 가능)</small>
-  </div>
+    <div class="row">
+      <textarea name="textarea03" id="textarea03" required="required" placeholder="자신의 특기를 입력해주세요"></textarea>
+      <label for="textarea03">(*필수) 자신의 특기를 서술해주시기 바랍니다.</label>
+      <span id="counter03" style="float: right;">###</span>
+      <small class="form-text text-muted very-small">자신의 장점이나 특기 등을 자유롭게 적어주시면 됩니다. (최대 2000자 입력 가능)</small>
+    </div>
 
-  <div class="row">
-    <textarea name="textarea06" id="textarea06" placeholder="포트폴리오를 공유한 구글 드라이브 링크를 입력해주세요"></textarea>
-    <label for="textarea05">(*선택) 포트폴리오가 있으시다면 아래 구글드라이브 링크로 제출해주시기 바랍니다.</label>
-    <small class="form-text text-muted very-small">자신을 자랑할 수 있는 것이라면 아무거나 상관없습니다. 기재할 링크가 없다면 없음으로 작성해주시면 됩니다. <br></small>
-    <a href=/unifox/drive>구글 드라이브 사용법</a> 
-  </div>
-  
-  <button type="submit" tabindex="0">제출하기</button>
-  <br>
-  <br>
-  <br>
-</form>
-<!-- partial -->
+    <div class="row">
+      <textarea name="textarea04" id="textarea04" required="required" placeholder="자신의 취미를 입력해주세요"></textarea>
+      <label for="textarea04">(*필수) 자신의 취미를 서술해주시기 바랍니다.</label>
+      <span id="counter04" style="float: right;">###</span>
+      <small class="form-text text-muted very-small">자신이 평소에 즐겨하는 취미를 자유롭게 적어주시면 됩니다. (최대 2000자 입력 가능)</small>
+    </div>
+
+    <div class="row">
+      <textarea name="textarea05" id="textarea05" placeholder="해킹 대회 출전 경험을 입력해주세요"></textarea>
+      <label for="textarea05">(*선택) 해킹 대회 출전 경험을 서술해주시기 바랍니다.</label>
+      <span id="counter05" style="float: right;">###</span>
+      <small class="form-text text-muted very-small">해킹 관련 대회에 출전한 경험이나 수상한 경험을 적어주시면 됩니다. (최대 2000자 입력 가능)</small>
+    </div>
+
+    <div class="row">
+      <textarea name="textarea06" id="textarea06" placeholder="포트폴리오를 공유한 구글 드라이브 링크를 입력해주세요"></textarea>
+      <label for="textarea05">(*선택) 포트폴리오가 있으시다면 아래 구글드라이브 링크로 제출해주시기 바랍니다.</label>
+      <small class="form-text text-muted very-small">자신을 자랑할 수 있는 것이라면 아무거나 상관없습니다. 기재할 링크가 없다면 없음으로 작성해주시면 됩니다.
+        <br></small>
+      <a href=/unifox/drive>구글 드라이브 사용법</a> </div> <button type="submit" tabindex="0">제출하기</button>
+        <br>
+        <br>
+        <br>
+  </form>
+  <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js'></script>
-<script  src="../../javascript/layer7.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js'></script>
+  <script src="../../javascript/layer7.js"></script>
 
 </body>
+
 </html>
