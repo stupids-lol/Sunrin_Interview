@@ -1,75 +1,65 @@
-*,
-:before,
-:after {
-  box-sizing: border-box;
+@font-face {
+  font-family: 'BBTreeGL';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGL.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
-
+*,:before,:after {
+  box-sizing: border-box;
+  font-family: 'BBTreeGL', sans-serif;
+}
 body {
-  font-family: 'Gugi', cursive;
   background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
-
 .center {
   margin: 1px auto;
   width: 50%;
 }
-
 .intro {
   padding: 15px;
   border-radius: 50px;
   background: linear-gradient(145deg, #999eff, #8185e2);
-  box-shadow: 18px 18px 45px #7175c6,
-    -18px -18px 45px #adb3ff;
+  box-shadow: 18px 18px 45px #7175c6, -18px -18px 45px #adb3ff;
 }
-
 .main {
   padding: 40px;
   border-radius: 20px;
   background-image: linear-gradient(42deg, #4e54c8 0%, #8f94fb 100%);
 }
-
-
 form {
   width: 640px;
   margin: 45px auto;
 }
-
 form h1 {
   font-size: 3em;
   font-weight: 300;
-  font-family: 'Gugi', cursive;
   text-align: center;
   color: #dcdde1;
+  font-family: 'Black Han Sans', sans-serif;
 }
-
 form h5 {
   text-align: center;
   text-transform: uppercase;
   color: #dcdde1;
 }
-
 form hr.sep {
   background: #718093;
   box-shadow: none;
   border: none;
   height: 2px;
   width: 25%;
-  margin: 0px auto 45px auto;
+  margin: 0 auto 45px;
 }
-
 form .emoji {
   font-size: 1.2em;
 }
-
 .group {
   position: relative;
   margin: 50px 0;
 }
-
 textarea {
   resize: none;
 }
-
 input,
 textarea {
   background: none;
@@ -83,31 +73,25 @@ textarea {
   border-radius: 0;
   border-bottom: 2px solid #c6c6c6;
 }
-
 input:focus,
 textarea:focus {
   outline: none;
 }
-
-input:focus~label,
-input:valid~label,
-textarea:focus~label,
-textarea:valid~label {
+input:focus ~ label,
+input:valid ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label {
   top: -20px;
   font-size: 10px;
-  font-family: 'Gugi', cursive;
   color: rgb(255, 255, 255);
 }
-
-input:focus~.bar:before,
-textarea:focus~.bar:before {
+input:focus ~ .bar:before,
+textarea:focus ~ .bar:before {
   width: 555px;
 }
-
 input[type="password"] {
   letter-spacing: 0.3em;
 }
-
 label {
   color: #c6c6c6;
   font-size: 16px;
@@ -119,31 +103,28 @@ label {
   -webkit-transition: 300ms ease all;
   transition: 300ms ease all;
 }
-
 .bar {
   position: relative;
   display: block;
   width: 640px;
 }
-
 .bar:before {
   content: '';
   height: 2px;
   width: 0;
-  bottom: 0px;
+  bottom: 0;
   position: absolute;
   background: #060879;
   -webkit-transition: 300ms ease all;
   transition: 300ms ease all;
-  left: 0%;
+  left: 0;
 }
-
 .btn {
   background: #ffffff;
   color: #959595;
   font-size: 12px;
   border: none;
-  padding: 20px 20px;
+  padding: 20px;
   border-radius: 3px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -153,42 +134,33 @@ label {
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-
 .btn:hover {
   color: #8b8b8b;
   box-shadow: 0 7px 14px rgba(0, 0, 0, 0.18), 0 5px 5px rgba(0, 0, 0, 0.12);
 }
-
 .btn.btn-link {
   background: #646ade;
   color: #d3eafd;
 }
-
 .btn.btn-link:hover {
   background: #646ade;
   color: #deeffd;
 }
-
 .btn.btn-submit {
   background: #8e58c4;
-  font-family: 'Gugi', cursive;
   color: #bce0fb;
 }
-
 .btn.btn-submit:hover {
   background: #646ade;
   color: #deeffd;
 }
-
 .btn.btn-cancel {
   background: #eee;
 }
-
 .btn.btn-cancel:hover {
   background: #e1e1e1;
   color: #8b8b8b;
 }
-
 .btn-box {
   text-align: center;
   margin: 50px 0;
