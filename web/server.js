@@ -52,8 +52,4 @@ http.listen(80, function () {
   console.log('server on!');
 });
 
-http.listen(443, function () {
-  console.log('server on!');
-});
-
 module.exports = app;
