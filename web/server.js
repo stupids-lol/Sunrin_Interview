@@ -48,7 +48,7 @@ app.all('*',
   }
 );
 
-http.listen(7777, function () {
+http.listen(3000, function () {
   console.log('server on!');
 });
 
