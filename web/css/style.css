@@ -1,0 +1,134 @@
+body{
+    height:85vh;
+    color:#ff6f61;
+    background-image: url(./images/finish.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+h1{
+    position: relative;
+    top:50%;
+    left:50%;
+    width: 18em;
+    border-right: 3px solid #ff6f61;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    display: block;
+    font-size: 60px;
+    font-family:'Lato';
+}
+.message{
+    animation: typeMsg 7s steps(40) 1s 1 normal both,
+    curserAnim 500ms steps(40) infinite normal;
+}
+@keyframes typeMsg{
+    0%{
+        width:0em;
+    }
+    100%{
+        width:18em;
+    }
+}
+@keyframes curserAnim{
+    0%{
+        border-right-color:#ff6f61;
+    }
+    100%{
+        border-right-color:transparent;
+    }
+}
+
+
+
+
+/*  footer   */
+footer {
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+}
+
+footer p {
+    margin: 10px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida  Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+footer .fa-heart{
+    color: red;
+}
+footer .fa-dev{
+    color: #fff;
+}
+footer .fa-twitter-square{
+  color:#1da0f1;
+}
+footer .fa-instagram{
+  color: #f0007c;
+}
+fotter .fa-linkedin{
+  color:#0073b1;
+}
+footer .fa-codepen{
+  color:#fff
+}
+footer a {
+    color: #3c97bf;
+    text-decoration: none;
+  margin-right:5px;
+}
+.githubBtn{
+    position: fixed;
+    left: 50%;
+  transform:translatex(-50%);
+    bottom: 45px;
+    cursor: pointer;
+    transition: all .3s;
+    vertical-align: middle;
+    text-align: center;
+    display: inline-block;
+}
+.githubBtn i{
+   font-size:20px;
+  float:left;
+}
+.githubBtn a{
+    color:#ff0000;
+    animation: youtubeAnim 1000ms linear infinite;
+  float:right;
+}
+.githubBtn a:hover{
+  color:#c9110f;
+  transition:all .3s ease-in-out;
+}
+.githubBtn i:active{
+  transform:scale(.9);
+  transition:all .3s ease-in-out;
+}
+.githubBtn span{
+    font-family: 'Lato';
+    font-weight: bold;
+    color: #000;
+    display: block;
+    font-size: 12px;
+    float: right;
+    line-height: 20px;
+    padding-left: 5px;
+  
+}
+
+@keyframes youtubeAnim{
+  0%,100%{
+    color:#c9110f;
+  }
+  50%{
+    color:#ff0000;
+  }
+}
+/* footer  */

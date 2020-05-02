@@ -33,11 +33,11 @@ app.set('views', path.join(__dirname + '/routers/views'));
 app.engine('html', require('ejs').renderFile);
 
 app.use('/', main);
-app.use('/layer7', layer7);
-app.use('/unifox', unifox);
-app.use('/nefus', nefus);
-app.use('/teamlog', teamlog);
-app.use('/emotion', emotion);
+//app.use('/layer7', layer7);
+//app.use('/unifox', unifox);
+//app.use('/nefus', nefus);
+//app.use('/teamlog', teamlog);
+//app.use('/emotion', emotion);
 app.use('/login', login);
 app.use('/view', view);
 app.use('/detail', detail);
