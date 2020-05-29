@@ -22,9 +22,12 @@ const session = expressSession({
 });
 
 app.use(express.static(__dirname + '/'));
-app.use(bodyParser.json());
+app.use(bodyParser.json({
+  limit : "50mb"
+}));
 app.use(bodyParser.urlencoded({
-  extended: true
+  limit:"50mb", 
+  extended: false
 }));
 app.use(cookieParser());
 app.use(session);
@@ -33,11 +36,11 @@ app.set('views', path.join(__dirname + '/routers/views'));
 app.engine('html', require('ejs').renderFile);
 
 app.use('/', main);
-//app.use('/layer7', layer7);
-//app.use('/unifox', unifox);
-//app.use('/nefus', nefus);
-//app.use('/teamlog', teamlog);
-//app.use('/emotion', emotion);
+app.use('/layer7', layer7);
+app.use('/unifox', unifox);
+app.use('/nefus', nefus);
+app.use('/teamlog', teamlog);
+app.use('/emotion', emotion);
 app.use('/login', login);
 app.use('/view', view);
 app.use('/detail', detail);
@@ -48,7 +51,7 @@ app.all('*',
   }
 );
 
-http.listen(3000, function () {
+http.listen(7777, function () {
   console.log('server on!');
 });
 

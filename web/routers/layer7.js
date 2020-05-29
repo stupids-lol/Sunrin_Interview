@@ -14,12 +14,12 @@ router.post('/', function (req, res) {
     let number = req.body.number;
     let phone_number = req.body.phone;
     let email = req.body.email;
-    let content01 = '질문 1 (*필수) Layer7에 지원한 동기를 서술해 주시기 바랍니다 : ' + req.body.textarea01;
-    let content02 = '질문 2 (*필수) 주분야 또는 전공 대한 자신의 경험을 서술해주시기 바랍니다 : ' + req.body.textarea02;
-    let content03 = '질문 3 (*필수) 자신의 특기를 서술해주시기 바랍니다 : ' + req.body.textarea03;
-    let content04 = '질문 4 (*필수) 자신의 취미를 서술해주시기 바랍니다 : ' + req.body.textarea04;
-    let content05 = '질문 5 (*선택) 해킹 대회 출전 경험을 서술해주시기 바랍니다 : ' + req.body.textarea05;
-    let content06 = '질문 6 (*선택) 포트폴리오가 있으시다면 아래 구글드라이브 링크로 제출해주시기 바랍니다 : ' + req.body.textarea06;
+    let content01 = '질문 1 (*필수) 본인은 어떤 사람인지 소개해주세요' + '<br/>' + req.body.textarea01.replace(/(?:\r\n|\r|\n)/g, '<br/>');
+    let content02 = '질문 2 (*필수) 동아리 지원 동기를 작성해주세요' + '<br/>' + req.body.textarea02.replace(/(?:\r\n|\r|\n)/g, '<br/>');
+    let content03 = '질문 3 (*필수) 주분야 또는 전공에 대한 자신의 경험을 서술해주세요' + '<br/>' + req.body.textarea03.replace(/(?:\r\n|\r|\n)/g, '<br/>');
+    let content04 = '질문 4 (*필수) 자신의 특기를 서술해주시기 바랍니다' + '<br/>' + req.body.textarea04.replace(/(?:\r\n|\r|\n)/g, '<br/>');
+    let content05 = '질문 5 (*선택) 동아리 합격 후 하고싶은 공부와 포부에 대하여 서술해주세요' + '<br/>' + req.body.textarea05.replace(/(?:\r\n|\r|\n)/g, '<br/>');
+    let content06 = '질문 6 (*선택) 포트폴리오가 있으시다면 아래 구글드라이브 링크로 제출해주시기 바랍니다' + '<br/>' + req.body.textarea06.replace(/(?:\r\n|\r|\n)/g, '<br/>');
     var formData = {
         club: club,
         name: name.slice(0, 5),
@@ -32,11 +32,12 @@ router.post('/', function (req, res) {
         url: 'http://funnyga.me:14104/application/apply/',
         form: formData
     }, function (err, httpResponse, body) {
-        if (!err) {
+        if (!err && (httpResponse.statusCode == 200 || httpResponse.statusCode == 201)) {
             console.log(httpResponse.statusCode)
             res.send('<script type="text/javascript">alert("제출 완료 되었습니다.");window.location.href = "/"</script>');
         } else {
             console.log(err);
+            res.send('<script type="text/javascript">alert("[서버 오류] 제출 실패.");window.location.href = "/"</script>');
         }
     })
 })

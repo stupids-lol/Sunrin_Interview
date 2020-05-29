@@ -14,11 +14,11 @@ router.post('/', function (req, res) {
     let number = req.body.number;
     let phone_number = req.body.phone;
     let email = req.body.email;
-    let content01 = '질문 1 UniFox에 지원한 동기에 대해서 서술해주시기 바랍니다. : ' + req.body.textarea01;
-    let content02 = '질문 2 UniFox에 지원전에 한 남다른 노력에 대해서 서술해주시기 바랍니다. : ' + req.body.textarea02;
-    let content03 = '질문 3 UniFox에서 배우고 싶은 것과 그에 맞는 이유를 서술해주시기 바랍니다. : ' + req.body.textarea03;
-    let content04 = '질문 4 UniFox에서 자신이 어떤 존재가 될 것인지 서술해주시기 바랍니다. : ' + req.body.textarea04;
-    let content05 = '질문 5 (선택) 포트폴리오(자신을 자랑할 수 있는 것) (구글드라이브 링크 제출) : ' + req.body.textarea05;
+    let content01 = '질문 1 자기소개를 해주세요. : ' + '<br/>' + req.body.textarea01.replace(/(?:\r\n|\r|\n)/g, '<br/>');
+    let content02 = '질문 2 동아리 지원 동기를 작성해 주세요. : ' + '<br/>' + req.body.textarea02.replace(/(?:\r\n|\r|\n)/g, '<br/>');
+    let content03 = '질문 3 동아리를 들어온다면 어떤 역할을 담당할 수 있는지 작성해 주세요. : ' + '<br/>' + req.body.textarea03.replace(/(?:\r\n|\r|\n)/g, '<br/>');
+    let content04 = '질문 4 동아리에 들어와서 가장 하고 싶은 것이 무엇인지 작성해 주세요. : ' + '<br/>' + req.body.textarea04.replace(/(?:\r\n|\r|\n)/g, '<br/>');
+    let content05 = '질문 5 팀으로 진행하는 프로젝트가 있다면 어떤 프로젝트를 해보고 싶은지 또 어떤 역할을 하고 싶은지 작성해 주세요. : ' + '<br/>' + req.body.textarea05.replace(/(?:\r\n|\r|\n)/g, '<br/>');
     var formData = {
         club: club,
         name: name.slice(0, 5),
@@ -31,10 +31,11 @@ router.post('/', function (req, res) {
         url: 'http://funnyga.me:14104/application/apply/',
         form: formData
     }, function (err, httpResponse, body) {
-        if (!err) {
+        if (!err && (httpResponse.statusCode == 200 || httpResponse.statusCode == 201)) {
             res.send('<script type="text/javascript">alert("제출 완료 되었습니다.");window.location.href = "/"</script>');
         } else {
             console.log(err);
+            res.send('<script type="text/javascript">alert("[서버 오류] 제출 실패.");window.location.href = "/"</script>');
         }
     })
 })

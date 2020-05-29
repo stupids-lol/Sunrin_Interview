@@ -4,11 +4,11 @@
 [class*="zocial-"]:before {
   font-family: 'Open Sans';
 }
-
+/*
 p {
   word-break: keep-all;
   word-wrap: break-word;
-}
+}*/
 
 body {
   font-family: 'Open Sans';

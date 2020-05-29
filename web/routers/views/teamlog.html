@@ -1,84 +1,72 @@
 <!DOCTYPE html>
-<html lang="ko">
-
+<html lang="en-KR" >
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&display=swap&subset=korean" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initialscale=1.0 ,user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&display=swap&subset=korean" rel="stylesheet">
   <title>TeamLog 8기 지원서</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../../css/teamlog.css">
+<link rel="stylesheet" href="../../css/teamlog.css">
 
 </head>
-
 <body>
-  <div class='container'>
-    <form action="/teamlog" method="post">
-      <div class="logo_box">
+<div class= 'container'>
+  <form action="/teamlog" method="post">
+    <div class="logo_box">
         <img src='../../css/images/TLlogo.png' style='width: 250px; height: 250px; text-align: center;'>
-      </div>
-
-      <h1>TEAMLOG</h1>
-      <h5>2020년 선린인터넷고등학교 정보보호과 전공동아리 TeamLog 지원등록 페이지입니다.
-        <br>지원기간 - 3월 11일 ~ 3월 99일
+    </div>
+        
+    <h1>TEAMLOG</h1>
+    <h5>2020년 선린인터넷고등학교 정보보호과 전공동아리 TeamLog 지원등록 페이지입니다.
+        <br>지원기간 - 6월 5일 23:29까지
+        <br>글자 수 언급이 없는 문항은 따로 제한 없습니다.
         <br>문의사항은 <a href="https://www.facebook.com/sunrintog" target="_blank">팀로그 페이스북</a>을 통해 문의 바랍니다. </h5>
-
-      <hr class="sep" />
-      <div class="group">
-        <input type="text" required="required" name="name" id="name" /><span class="highlight"></span><span
-          class="bar"></span>
-        <label>이름</label>
-      </div>
-      <div class="group">
-        <input type="number" required="required" name="number" id="number" /><span class="highlight"></span><span
-          class="bar"></span>
-        <label>학번</label>
-      </div>
-      <div class="group">
-        <input type="text" required="required" name="phone" id="phone" /><span class="highlight"></span><span
-          class="bar"></span>
-        <label>전화번호</label>
-      </div>
-      <div class="group">
-        <input type="text" required="required" name="email" id="email" /><span class="highlight"></span><span
-          class="bar"></span>
-        <label>이메일</label>
-      </div>
-
-      <div class="group">
-        <textarea name="textarea01" id="textarea01" rows="13" required="required"></textarea><span
-          class="highlight"></span><span class="bar"></span>
-        <label>TeamLog에 지원한 동기에 대하여 서술하여 주세요.</label>
-      </div>
-      <div class="group">
-        <textarea name="textarea02" id="textarea02" rows="8" required="required"></textarea><span
-          class="highlight"></span><span class="bar"></span>
-        <label>본인이 전공(C언어, 파이썬, HTML/CSS, 리눅스 등)을 어디까지 공부하였는지 서술하여 주세요.
-        </label>
-      </div>
-      <div class="group">
-        <textarea name="textarea03" id="textarea03" rows="13" required="required"></textarea><span
-          class="highlight"></span><span class="bar"></span>
-        <label>자신이 TeamLog에서 희망하는 전공과 자신의 포부에 대해 서술하여 주세요.</label>
-      </div>
-      <div class="group">
-        <textarea name="textarea04" id="textarea04" rows="8" required='required'></textarea><span
-          class="highlight"></span><span class="bar"></span>
-        <label>위의 문항 외에 따로 하고싶은 말이 있으시면 여기에 서술하여 주세요. (없을 시 '없음'입력)</label>
-      </div>
-      <div class="group">
-        <input type="text" name="textarea05" required='required' id="portfolio" /><span class="highlight"></span><span
-          class="bar"></span>
-        <label>포트폴리오가 있으시다면 이 문항에 구글 드라이브 링크를 기재해 주세요. (없을 시 '없음'입력)</label>
-      </div>
-      <a href='/unifox/drive'>구글 드라이브 사용법</a>
-      <div class="btn-box">
-        <button class="btn btn-submit" type="submit">제출하기</button>
-      </div>
+        
+    <hr class="sep"/>
+    <div class="group">
+      <input type="text" required="required" id="name" name="name"/><span class="highlight"></span><span class="bar"></span>
+      <label>이름</label>
+    </div>
+    <div class="group">
+      <input type="number" required="required" id="number" name="number"/><span class="highlight"></span><span class="bar"></span>
+      <label>학번</label>
+    </div>
+    <div class="group">
+      <input type="text" required="required" id="phone" name="phone"/><span class="highlight"></span><span class="bar"></span>
+      <label>전화번호</label>
+    </div>
+    <div class="group">
+      <input type="text" required="required" id="email" name="email"/><span class="highlight"></span><span class="bar"></span>
+      <label>이메일</label>
+    </div>
+        
+    <div class="group">
+      <textarea name="textarea01" id="textarea01" rows="11" required="required"></textarea><span class="highlight"></span><span class="bar"></span>
+      <label>TeamLog에 지원한 동기에 대하여 서술하여 주세요. (400자 내외)</label>
+    </div>
+    <div class="group">
+      <textarea name="textarea02" id="textarea02" rows="8" required="required"></textarea><span class="highlight"></span><span class="bar"></span>
+      <label id="small_font">본인이 전공(C언어, 네트워크, HTML/CSS, 리눅스 등)을 어디까지 공부하였는지 서술하여 주세요.
+          </label>
+    </div>
+    <div class="group">
+      <textarea name="textarea03" id="textarea03" rows="8" required="required"></textarea><span class="highlight"></span><span class="bar"></span>
+      <label id="middle_font">자신이 TeamLog에서 희망하는 전공(ex: 네트워크, 웹, 서버)과 그 이유에 관하여 서술하여 주세요. </label>
+    </div>
+    <div class="group">
+      <textarea name="textarea04" id="textarea04" rows="8" required='required'></textarea><span class="highlight"></span><span class="bar"></span>
+      <label>TeamLog에 입부하면 자신이 어떠한 노력을 할 것인지 서술해 주세요.</label>
+    </div>
+    <div class="group">
+      <input type="text" name="textarea05" id="textarea05"required='required' id="portfolio"/><span class="highlight"></span><span class="bar"></span>
+      <label>포트폴리오가 있으시다면 이 문항에 구글 드라이브 링크를 기재해 주세요. (없을 시 '없음' 입력)</label>
+    </div>
+    <a href=''>구글 드라이브 사용법</a>
+    <div class="btn-box">
+      <button class="btn btn-submit" type="submit">제출하기</button>
+    </div>
     </form>
-  </div>
-  <!-- partial -->
+</div>
+<!-- partial -->
 
 </body>
-
 </html>

@@ -1,15 +1,12 @@
-@font-face {
-  font-family: 'BBTreeGL';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGL.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
 *,:before,:after {
   box-sizing: border-box;
-  font-family: 'BBTreeGL', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
+  cursor: url(maplcursor.cur), auto !important;
 }
 body {
-  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-image: linear-gradient(95deg, #667eea 0%, #764ba2 100%);
 }
 .center {
   margin: 1px auto;
@@ -18,7 +15,7 @@ body {
 .intro {
   padding: 15px;
   border-radius: 50px;
-  background: linear-gradient(145deg, #999eff, #8185e2);
+  background: linear-gradient(135deg, #999eff, #8185e2);
   box-shadow: 18px 18px 45px #7175c6, -18px -18px 45px #adb3ff;
 }
 .main {
@@ -35,7 +32,6 @@ form h1 {
   font-weight: 300;
   text-align: center;
   color: #dcdde1;
-  font-family: 'Black Han Sans', sans-serif;
 }
 form h5 {
   text-align: center;
@@ -57,6 +53,7 @@ form .emoji {
   position: relative;
   margin: 50px 0;
 }
+
 textarea {
   resize: none;
 }
@@ -65,7 +62,6 @@ textarea {
   background: none;
   color: #c6c6c6;
   font-size: 18px;
-  font-family: 'Gothic A1', sans-serif;
   padding: 10px 10px 10px 5px;
   display: block;
   width: 555px;
