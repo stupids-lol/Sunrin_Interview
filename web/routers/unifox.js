@@ -14,11 +14,11 @@ router.post('/', function (req, res) {
     let number = req.body.number;
     let phone_number = req.body.phone;
     let email = req.body.email;
-    let content01 = '질문 1 자기소개를 해주세요. : ' + '<br/>' + req.body.textarea01.replace(/(?:\r\n|\r|\n)/g, '<br/>');
-    let content02 = '질문 2 동아리 지원 동기를 작성해 주세요. : ' + '<br/>' + req.body.textarea02.replace(/(?:\r\n|\r|\n)/g, '<br/>');
-    let content03 = '질문 3 동아리를 들어온다면 어떤 역할을 담당할 수 있는지 작성해 주세요. : ' + '<br/>' + req.body.textarea03.replace(/(?:\r\n|\r|\n)/g, '<br/>');
-    let content04 = '질문 4 동아리에 들어와서 가장 하고 싶은 것이 무엇인지 작성해 주세요. : ' + '<br/>' + req.body.textarea04.replace(/(?:\r\n|\r|\n)/g, '<br/>');
-    let content05 = '질문 5 팀으로 진행하는 프로젝트가 있다면 어떤 프로젝트를 해보고 싶은지 또 어떤 역할을 하고 싶은지 작성해 주세요. : ' + '<br/>' + req.body.textarea05.replace(/(?:\r\n|\r|\n)/g, '<br/>');
+    let content01 = '질문 1 자기소개를 해주세요. ' + '<br/>' + req.body.textarea01.replace(/(?:\r\n|\r|\n)/g, '<br/>');
+    let content02 = '질문 2 동아리 지원 동기를 작성해 주세요.  ' + '<br/>' + req.body.textarea02.replace(/(?:\r\n|\r|\n)/g, '<br/>');
+    let content03 = '질문 3 동아리를 들어온다면 어떤 역할을 담당할 수 있는지 작성해 주세요.  ' + '<br/>' + req.body.textarea03.replace(/(?:\r\n|\r|\n)/g, '<br/>');
+    let content04 = '질문 4 동아리에 들어와서 가장 하고 싶은 것이 무엇인지 작성해 주세요.  ' + '<br/>' + req.body.textarea04.replace(/(?:\r\n|\r|\n)/g, '<br/>');
+    let content05 = '질문 5 팀으로 진행하는 프로젝트가 있다면 어떤 프로젝트를 해보고 싶은지 또 어떤 역할을 하고 싶은지 이유와 함께 작성해 주세요. ' + '<br/>' + req.body.textarea05.replace(/(?:\r\n|\r|\n)/g, '<br/>');
     var formData = {
         club: club,
         name: name.slice(0, 5),
