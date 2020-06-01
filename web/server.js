@@ -1,5 +1,7 @@
 const express = require('express');
 const app = express();
+var logger = require('morgan');
+var fs = require('fs')
 const path = require('path');
 const http = require('http').Server(app);
 const expressSession = require('express-session');
@@ -34,6 +36,10 @@ app.use(session);
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname + '/routers/views'));
 app.engine('html', require('ejs').renderFile);
+
+var accessLogStream = fs.createWriteStream(path.join(__dirname, 'log/access.log'), { flags: 'a' })
+app.use(logger('dev'));
+app.use(logger('combined', { stream: accessLogStream }))
 
 app.use('/', main);
 app.use('/layer7', layer7);
