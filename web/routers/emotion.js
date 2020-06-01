@@ -23,13 +23,13 @@ router.post('/', function (req, res) {
         day = '면접 가능 날짜 : 3월 2일';
     }
     let email = req.body.email;
-    let content01 = '질문 1 지원동기 : ' + '<br/>' + req.body.textarea01.replace(/(?:\r\n|\r|\n)/g, '<br/>');
-    let content02 = '질문 2 자신의 포부 : ' + '<br/>' + req.body.textarea02.replace(/(?:\r\n|\r|\n)/g, '<br/>');
-    let content03 = '질문 3 자신의 장단점 : ' + '<br/>' + req.body.textarea03.replace(/(?:\r\n|\r|\n)/g, '<br/>');
-    let content04 = '질문 4 이모션에 들어와서 가장 배우고 싶은 것 : ' + '<br/>' + req.body.textarea04.replace(/(?:\r\n|\r|\n)/g, '<br/>');
-    let content05 = '질문 5 가장 열정적으로 임했던 일과 이를 통해서 이룬 것 : ' + '<br/>' + req.body.textarea05.replace(/(?:\r\n|\r|\n)/g, '<br/>');
-    let content06 = '질문 6 자신에게 주어졌던 일 중 가장 어려웠던 경험 : ' + '<br/>' + req.body.textarea06.replace(/(?:\r\n|\r|\n)/g, '<br/>');
-    let content07 = '질문 6 마지막으로 하고 싶은 말을 자유롭게 작성해주세요 : ' + '<br/>' + req.body.textarea07.replace(/(?:\r\n|\r|\n)/g, '<br/>');
+    let content01 = '질문 1 지원동기 : ' + '<br/>' + req.body.textarea01.replace(/(?:\r\n|\r|\n)/g, '<br/>').replace("<", "&lt;").replace(">", "&gt;").replace("&lt;br/&gt;", "<br/>");
+    let content02 = '질문 2 자신의 포부 : ' + '<br/>' + req.body.textarea02.replace(/(?:\r\n|\r|\n)/g, '<br/>').replace("<", "&lt;").replace(">", "&gt;").replace("&lt;br/&gt;", "<br/>");
+    let content03 = '질문 3 자신의 장단점 : ' + '<br/>' + req.body.textarea03.replace(/(?:\r\n|\r|\n)/g, '<br/>').replace("<", "&lt;").replace(">", "&gt;").replace("&lt;br/&gt;", "<br/>");
+    let content04 = '질문 4 이모션에 들어와서 가장 배우고 싶은 것 : ' + '<br/>' + req.body.textarea04.replace(/(?:\r\n|\r|\n)/g, '<br/>').replace("<", "&lt;").replace(">", "&gt;").replace("&lt;br/&gt;", "<br/>");
+    let content05 = '질문 5 가장 열정적으로 임했던 일과 이를 통해서 이룬 것 : ' + '<br/>' + req.body.textarea05.replace(/(?:\r\n|\r|\n)/g, '<br/>').replace("<", "&lt;").replace(">", "&gt;").replace("&lt;br/&gt;", "<br/>");
+    let content06 = '질문 6 자신에게 주어졌던 일 중 가장 어려웠던 경험 : ' + '<br/>' + req.body.textarea06.replace(/(?:\r\n|\r|\n)/g, '<br/>').replace("<", "&lt;").replace(">", "&gt;").replace("&lt;br/&gt;", "<br/>");
+    let content07 = '질문 6 마지막으로 하고 싶은 말을 자유롭게 작성해주세요 : ' + '<br/>' + req.body.textarea07.replace(/(?:\r\n|\r|\n)/g, '<br/>').replace("<", "&lt;").replace(">", "&gt;").replace("&lt;br/&gt;", "<br/>");
     var formData = {
         club: club,
         name: name.slice(0, 5),
