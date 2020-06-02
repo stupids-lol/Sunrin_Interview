@@ -7,6 +7,15 @@ body {
   height: 100%;
 }
 
+
+.first {
+  position: absolute; top:20%; 
+}
+
+.second{
+  position: absolute; bottom:20%; 
+}
+
 /*  footer   */
 footer {
   background-color: #222;
@@ -194,7 +203,7 @@ section.background-select {
   width: 600px;
   background-color: #ffffff;
   opacity: 0.8;
-  position: static;
+  position: relative;
   z-index: 21;
   border-radius: 10px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.13);
