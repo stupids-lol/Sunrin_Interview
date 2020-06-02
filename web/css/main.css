@@ -7,15 +7,6 @@ body {
   height: 100%;
 }
 
-
-.first {
-  position: fixed; top:20%; 
-}
-
-.second{
-  position: fixed; bottom:20%; 
-}
-
 /*  footer   */
 footer {
   background-color: #222;
