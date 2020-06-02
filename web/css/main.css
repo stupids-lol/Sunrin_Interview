@@ -9,11 +9,11 @@ body {
 
 
 .first {
-  position: absolute; top:20%; 
+  position: fixed; top:20%; 
 }
 
 .second{
-  position: absolute; bottom:20%; 
+  position: fixed; bottom:20%; 
 }
 
 /*  footer   */
