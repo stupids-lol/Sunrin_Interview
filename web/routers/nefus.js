@@ -4,7 +4,7 @@ const request = require('request');
 
 router.get('/', function (req, res) {
     console.log('[GET] /nefus');
-    res.sendFile(__dirname + '/views/nefus.html');
+    res.sendFile(__dirname + '/views/index.html');
 });
 
 router.post('/', function (req, res) {
