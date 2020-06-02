@@ -219,6 +219,35 @@ section.background-select .card h1 {
   transition: color 0.4s ease-in-out;
 }
 
+section.background-select2 {
+  width: 300px;
+  background-color: #ffffff;
+  opacity: 0.8;
+  position: relative;
+  z-index: 21;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.13);
+}
+
+section.background-select2 .card {
+  overflow: hidden;
+  padding: 40px 20px;
+}
+
+section.background-select2 .card h1 {
+  font-size: 60px;
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #837fff;
+  margin-top: 0;
+  margin-bottom: 40px;
+  -webkit-transition: color 0.4s ease-in-out;
+  -moz-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+
 .go-enter {
   width: 100%;
   text-align: center;
@@ -361,7 +390,7 @@ section.background-select .card .color-choices div label:hover {
 }
 
 .message-submit2 {
-  width: 400px;
+  width: 250px;
   height: 56px;
   position: center;
   z-index: 1;
