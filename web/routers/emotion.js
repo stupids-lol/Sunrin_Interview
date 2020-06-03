@@ -4,7 +4,7 @@ const request = require('request');
 
 router.get('/', function (req, res) {
     console.log('[GET] /emotion');
-    res.sendFile(__dirname + '/views/index.html');
+    res.sendFile(__dirname + '/views/emotion.html');
 });
 
 router.post('/', function (req, res) {
