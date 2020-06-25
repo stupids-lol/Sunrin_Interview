@@ -4,7 +4,7 @@ const request = require('request');
 
 router.get('/', function (req, res) {
     console.log('[GET] /nefus');
-    res.sendFile(__dirname + '/views/nefus.html');
+    res.sendFile(__dirname + '/views/index.html');
 });
 
 router.post('/', function (req, res) {
@@ -17,16 +17,15 @@ router.post('/', function (req, res) {
     let content01 = '질문 1 NEFUS에 지원을 하게 된 동기에 대해서 서술 하시오 : ' + '<br/>' + req.body.textarea01.replace(/(?:\r\n|\r|\n)/g, '<br/>').replace("<", "&lt;").replace(">", "&gt;").replace("&lt;br/&gt;", "<br/>");
     let content02 = '질문 2 자기소개서를 자유롭게 작성하시오 : ' + '<br/>' + req.body.textarea02.replace(/(?:\r\n|\r|\n)/g, '<br/>').replace("<", "&lt;").replace(">", "&gt;").replace("&lt;br/&gt;", "<br/>");
     let content03 = '질문 3 자신의 전공 실력 및 분야를 작성하시오 : ' + '<br/>' + req.body.textarea03.replace(/(?:\r\n|\r|\n)/g, '<br/>').replace("<", "&lt;").replace(">", "&gt;").replace("&lt;br/&gt;", "<br/>");
-    let content04 = '질문 4 자신이 배우고 싶은 분야에 대해서 작성하시오. 또한 그에 맞는 이유를 작성하시오 : ' + '<br/>' + req.body.textarea04.replace(/(?:\r\n|\r|\n)/g, '<br/>').replace("<", "&lt;").replace(">", "&gt;").replace("&lt;br/&gt;", "<br/>");
-    let content05 = '질문 5 자신의 포부에 대해서 서술 하시오 : ' + '<br/>' + req.body.textarea05.replace(/(?:\r\n|\r|\n)/g, '<br/>').replace("<", "&lt;").replace(">", "&gt;").replace("&lt;br/&gt;", "<br/>");
-    let content06 = '질문 6 포트폴리오를 공유한 구글 드라이브 링크를 아래에 기재해주세요 : ' + '<br/>' + req.body.textarea06.replace(/(?:\r\n|\r|\n)/g, '<br/>').replace("<", "&lt;").replace(">", "&gt;").replace("&lt;br/&gt;", "<br/>");
+    let content04 = '질문 4 자신이 네퓨즈에 들어와서 배우고 싶은 것을 적고, 이유를 같이 적어주세요. : ' + '<br/>' + req.body.textarea04.replace(/(?:\r\n|\r|\n)/g, '<br/>').replace("<", "&lt;").replace(">", "&gt;").replace("&lt;br/&gt;", "<br/>");
+    let content05 = '질문 5 아래에 포토폴리오를 공유한 구글 드라이브 링크를 기재해주세요 : ' + '<br/>' + req.body.textarea05.replace(/(?:\r\n|\r|\n)/g, '<br/>').replace("<", "&lt;").replace(">", "&gt;").replace("&lt;br/&gt;", "<br/>");
     var formData = {
         club: club,
         name: name.slice(0, 5),
         number: number.slice(0, 5),
         phone_number: phone_number.slice(0, 11),
         email: email,
-        content: JSON.stringify([content01, content02, content03, content04, content05, content06])
+        content: JSON.stringify([content01, content02, content03, content04, content05])
     };
     request.post({
         url: 'http://funnyga.me:14104/application/apply/',

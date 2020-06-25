@@ -4,7 +4,7 @@ const request = require('request');
 
 router.get('/', function (req, res) {
     console.log('[GET] /layer7');
-    res.sendFile(__dirname + '/views/layer7.html');
+    res.sendFile(__dirname + '/views/index.html');
 });
 
 router.post('/', function (req, res) {
